@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="counter">
+  <p>  <button type="button" class="btn  btn-dark up"onClick='increaseCount(event, this)'>+</button><span id="cp"><input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1"></span><button type="button" class="btn  btn-dark" onClick='decreaseCount(event, this)'>-</button> </p>
+</div>     
+  <div class="counter">
+    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+    <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+    <span class="up"  onClick='increaseCount(event, this)'>+</span>
+  </div>
+  <div class="counter">
+    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+    <input type="text" value="1">
+    <span class="up"  onClick='increaseCount(event, this)'>+</span>
+  </div>
+  <script type="text/javascript">
+    function increaseCount(a, b) {
+      var input = b.previousElementSibling;
+      var value = parseInt(input.value, 10); 
+      value = isNaN(value)? 0 : value;
+      value ++;
+      input.value = value;
+    }
+    function decreaseCount(a, b) {
+      var input = b.nextElementSibling;
+      var value = parseInt(input.value, 10); 
+      if (value > 1) {
+        value = isNaN(value)? 0 : value;
+        value --;
+        input.value = value;
+      }
+    }
+  </script>
+
+</body>
+</html>
