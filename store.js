@@ -22,7 +22,21 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
+       var addToCartButtons = document.getElementsByClassName('shop-item-buttonS')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClickedS)
+    }
+    var addToCartButtons = document.getElementsByClassName('shop-item-buttonL')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClickedL)
+    }
+    var addToCartButtons = document.getElementsByClassName('shop-item-buttonM')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClickedM)
+    }
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
@@ -77,9 +91,42 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc,quantite)
     updateCartTotal()
 }
+function addToCartClickedS(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText+": S"
+    var price = shopItem.getElementsByClassName('shop-item-priceS')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    
+    var quantite=shopItem.getElementsByClassName('item-quantity-input')[0].value
+    addItemToCart(title, price, imageSrc,quantite)
+    updateCartTotal()
+}
+function addToCartClickedM(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText+": M"
+    var price = shopItem.getElementsByClassName('shop-item-priceM')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    
+    var quantite=shopItem.getElementsByClassName('item-quantity-input')[0].value
+    addItemToCart(title, price, imageSrc,quantite)
+    updateCartTotal()
+}
+function addToCartClickedL(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText+": L"
+    var price = shopItem.getElementsByClassName('shop-item-priceL')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    
+    var quantite=shopItem.getElementsByClassName('item-quantity-input')[0].value
+    addItemToCart(title, price, imageSrc,quantite)
+    updateCartTotal()
+}
 
 function addItemToCart(title, price, imageSrc,quantite) {
-    console.log("qtq:",quantite);
+
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -124,7 +171,7 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = 'DH' + total
 }
 var counter=1;
-var cp=1;
+var cp=0;
 function cardCounter() {
     var div = document.getElementById("cp");
 
