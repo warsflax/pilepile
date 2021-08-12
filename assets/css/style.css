@@ -23,9 +23,9 @@ a:hover {
   text-decoration: none;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  /* font-family: "Satisfy", sans-serif; 
-} */
+ h1, h2, h3, h4, h5, h6 {
+ color: rgb(255, 255, 255);
+} 
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -511,7 +511,8 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  #hero p {
+  #hero 
+  
     width: 50%;
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
@@ -1078,7 +1079,9 @@ section {
   background: #fff;
 }
 
-.book-a-table .php-email-form .form-group {
+.book-a-table .php-email-form .form-grou
+
+
   padding-bottom: 8px;
 }
 
