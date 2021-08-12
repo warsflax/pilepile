@@ -25,7 +25,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="assets/css/back.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css.css" >
@@ -62,10 +62,11 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="apropos.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="#loca">LOCALISATION</a></li>
+          <!-- <li><a class="nav-link scrollto" href="apropos.html">About</a></li> -->
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="apropos.html #events">you have a event?</a></li>
-          <li><a class="nav-link scrollto" href="Contact.html">Contact</a></li>
+          <!-- <li><a class="nav-link scrollto" href="apropos.html #events">you have a event?</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="Contact.html">Contact</a></li> -->
       
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -112,187 +113,194 @@
       <div class="container">
         <a href="#" onclick="openMoadl()">
                   <div class="fixed-btn">
-          <button class="btn btn-link" id="btnPopup">buy now <div id="cp"></div></button>
+          <button class="btn btn-link" style="background-color: brown;" id="btnPopup">buy now <div id="cp"></div></button>
         </div>
       </a>
-
+      <div class="whats-new">
+      <img src="assets/img/WHATS NEW.png">
+      </div>
         <div class="section-title">
-          <h2>Ktachef m3ana L'<span>Menu</span></h2>
+          <h2 style="color: white;">Ktachef m3ana L'<span>Menu</span></h2>
         </div>
-        <center>
-<p><button type="button" class="btn" style="background-color:#ffb03b;">Petit</button>   <button type="button" style="background-color:#ffb03b;" class="btn "style="background-color:#ffb03b;">Moyenne</button>   <button type="button" class="btn"style="background-color:#ffb03b;">Grand</button></p>
-</center>          
+               
 </div>
-            <div class="hiho">
-              <div class="row">
-             
-                <div class="col-lg-3">
-                  <div class="container">
-                    <div class="card">
-               <p>sauce tomare+fromago+poivron+olives</p>
-                      <div class="imgBx">
-                        <img class="shop-item-image" src="assets/img/pizza/1margharita.jfif">
-                      </div>
-                      <div class="contentBx">
-                        <h2 style="color: black;"  class="shop-item-title">Marghirita</h2>
-                      <h3 class="shop-item-price">15DH</h3>
-                      <div class="counter">
-                        <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                        <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                        <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                      <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">ajouter au panier</span>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
-                <div class="col-lg-4">
-              <div class="container">
-                <div class="card">
-                  <p>sauce tomato+Thon+fromago+poivron+olives</p>
-              
+<div>
+  
+  <!-- 1ere pizza -->
 
-                  <div class="imgBx">
-                    <img class="shop-item-image" src="assets/img/pizza/pizza-au-thon.jpg">
-                  </div>
-                  <div class="contentBx">
-                    <h2 style="color: black;"  class="shop-item-title">Thon</h2>
-                  <h3 class="shop-item-price">20DH</h3>
-                  <div class="counter">
-                    <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                    <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                    <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                  </div>
-                  <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">ajouter au panier</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-                      
-          <div class="row">
-              <div class="col-lg-3">
-            <div class="container">
-                <div class="card">
-                  <!-- <p>sauce tomare+merguez+fromago+poivron</p> -->
-              
-                  <div class="imgBx">
-                    <img class="shop-item-image" src="assets/img/pizza/pizza-merguez.jpeg">
-                  </div>
-                  <div class="contentBx">
-                    <h2 style="color: black;"  class="shop-item-title">merguez</h2>
-                  <h3 style="color: black;" class="shop-item-price">20DH</h3>
-                  <div class="counter">
-                    <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                    <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                    <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                  </div>
-                  <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">ajouter au panier</span> </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              
-              <div class="container">
-                <div class="card">
-                  <!-- <p>sauce tomare+viande hachée+fromago+poivron</p> -->
-              
-                  <div class="imgBx">
-                    <img class="shop-item-image" src="assets/img/pizza/Portofino.png">
-                  </div>
-                  <div class="contentBx">
-                    <h2 style="color: black;" class="shop-item-title">portofino</h2>
-                    <h3  class="shop-item-price">20DH</h3>
-                    <div class="counter">
-                      <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                      <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                      <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                    </div><span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">ajouter au panier</span>
-                   <!-- -->
-   
-                   <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">buy Now</span>
-                  
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
+  <div class="col-lg-3">
+  <div class="new" style="background-image:url(assets/img/pizza/1margharita.jfif)">
+    
+    <img class="shop-item-image img-card-style"  src="assets/img/pizza/1margharita.jfif" alt="">
+
+    <h2 style="color: rgb(255, 255, 255);"  class="shop-item-title" >Marghirita</h2>
+     <div class="counter">
+      <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+      <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+      <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+    </div>
+  <p>   <span class="shop-item-priceS" style="color: white;">15DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">20DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">25DH</span><br>
+     <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+    
+     &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+  </p>
  
-                  
-                    <div class="hiho" style="background-color: white;">
-                      <div class="row">
-                        <div class="col-lg-3">
-                      <div class="container">
-                        <div class="card" style="background-color: black;">
-                          <p>sauce tomate+dinde+fromago+poivron+olives</p>
-                          <div class="imgBx">
-                            <img class="shop-item-image" src="assets/img/pizza/chiken.png">
-                          </div>
-                          <div class="contentBx">
-                            <h2  class="shop-item-title">Chiken</h2>
-                            <h3 class="shop-item-price" style="color: white;">20DH</h3>
-                            <div class="counter">
-                              <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                              <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                              <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                            </div> <a class="shop-item-button"onclick="cardCounter()">ajouter au panier</a>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                        <div class="col-lg-3">
-                      <div class="container"1 >
-                        <div class="card" style="background-color: black;">
-                          <!-- <p>sauce tomate+merguez+viande hachée+fromago+poivron+olives</p> -->
-                          <div class="imgBx" >
-                            <img class="shop-item-image" style="" src="assets/img/pizza/royale.png">
-                          </div>
-                          <div class="contentBx">
-                            <h2 class="shop-item-title">Royal</h2>
-                            <h3 class="shop-item-price" style="color: white;">25DH</h3>
+   
 
-                            <div class="counter">
-                              <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                              <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                              <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                            </div>
-                            <a class="shop-item-button"onclick="cardCounter()">ajouter au panier</a>
+ 
+    <!-- <button class="shop-item-button"onclick="cardCounter()">S</button> -->
+    
+    
+  
+    <!-- <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">ajouter au panier</span> -->
+
+
+</div>
+</div>
+<br>
+<br>
+<br>
+  <!-- pizza 2 -->
+  <div class="col-lg-3">
+  <div class="new" style="background-image:url(assets/img/pizza/pizza-au-thon.jpg)">
+    
+    <img class="shop-item-image img-card-style"  src="assets/img/pizza/pizza-au-thon.jpg" alt="">
+
+    <h2   class="shop-item-title">Thon</h2>
+    
+    <div class="counter">
+      <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+      <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+      <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+    </div>
+  
+    <p>   <span class="shop-item-priceS" style="color: white;">20DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">25DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">45DH</span><br>
+      <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+     
+      &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+   </p>
   </div>
-                        </div>
-                      </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-3">
-                      <div class="container">
-                        <div class="card" style="background-color: black;">
-                          <!-- <p style="  background-color: lightBlue;
-                          width: 200px;
-                          height: 10px;">sauce tomare+fromago+crevettes+calamar</p> -->
-              
-                          <div class="imgBx">
-                            <img class="shop-item-image" src="assets/img/pizza/pizza-fruits-de-mer.jpg">
-                          </div>
-                          <div class="contentBx">
-                            <h2  class="shop-item-title">fruit de mere</h2>
-                            <h3 class="shop-item-price" style="color: white;">30DH</h3>
-
-                            <div class="counter">
-                              <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
-                              <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
-                              <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
-                            </div>
-                             <a class="shop-item-button"onclick="cardCounter()">ajouter au panier</a>
   </div>
-                        </div>
-                      </div>
-                        </div>
-                      
-                      </div>
-                    </div>
-                 
+  <br>
+<br>
+<br>
+  <!-- pizza 3 -->
+  <div class="col-lg-3">
+  <div class="new" style="background-image:url(assets/img/pizza/pizza-merguez.jpeg)">
+    
+    <img class="shop-item-image img-card-style"  src="assets/img/pizza/pizza-merguez.jpeg" alt="">
 
+    <h2   class="shop-item-title">merguez</h2> 
+    <div class="counter">
+      <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+      <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+      <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+    </div>
+
+    <p>   <span class="shop-item-priceS" style="color: white;">20DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">25DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">30DH</span><br>
+      <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+     
+      &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+   </p>
+  </div>
+  </div>
+  <br>
+<br>
+<br>
+  <!-- pizza 4 -->
+  <div class="col-lg-3">
+  <div class="new shop-item-image" style="background-image:url(assets/img/pizza/Portofino.png)">
+    
+    <img class="shop-item-image img-card-style"  src="assets/img/pizza/Portofino.png" alt="">
+
+    <h2 style="color: black;" class="shop-item-title">portofino</h2>
+     
+    <div class="counter">
+      <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+      <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+      <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+    </div>
+    
+  <p>   <span class="shop-item-priceS" style="color: white;">20DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">30DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">45DH</span><br>
+    <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+   
+    &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+ </p>
+  </div>
+  </div>
+  <br>
+<br>
+<br>
+            <!-- pizza5 -->
+  <div class="col-lg-3">
+    <div class="new shop-item-image" style="background-image:url(assets/img/pizza/chiken.png)">
+    
+      <img class="shop-item-image img-card-style"  src="assets/img/pizza/chiken.png" alt="">
+  
+      <h2  class="shop-item-title">Chiken</h2>
+                            
+      <div class="counter">
+        <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+        <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+        <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+      </div>
+
+      <p>   <span class="shop-item-priceS" style="color: white;">20DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">30DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">45DH</span><br>
+        <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+       
+        &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+     </p>
+    </div>
+  </div>
+  <br>
+<br>
+<br>
+  <!-- pizza6 -->
+    <div class="col-lg-3">
+      <div class="new shop-item-image" style="background-image:url(assets/img/pizza/royale.png)">
+    
+        <img class="shop-item-image img-card-style"  src="assets/img/pizza/royale.png" alt="">
+    
+        <h2  class="shop-item-title">Royal</h2>
+                             
+        <div class="counter">
+          <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+          <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+          <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+        </div>
+        
+  <p>   <span class="shop-item-priceS" style="color: white;">25DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">35DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">65DH</span><br>
+    <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+   
+    &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+ </p>
+      </div>
+    </div>
+    <br>
+<br>
+<br>
+    <!-- pizza7 -->
+      <div class="col-lg-3">
+        <div class="new shop-item-image" style="background-image:url(assets/img/pizza/pizza-fruits-de-mer.jpg)">
+    
+          <img class="shop-item-image img-card-style"  src="assets/img/pizza/pizza-fruits-de-mer.jpg" alt="">
+      
+          <h2  class="shop-item-title">fruit de mere</h2>
+                         
+          <div class="counter">
+            <span class="down btn  btn-dark" onClick='decreaseCount(event, this)'>-</span>
+            <input class='item-quantity-input' type='number' id='cp' style='height: 34px; width: 50px;' value="1">
+            <span class="btn  btn-dark up"  onClick='increaseCount(event, this)'>+</span>
+          </div>
+      
+  <p>   <span class="shop-item-priceS" style="color: white;">30DH</span>      <span class="shop-item-priceM" style="color: white;size:30px">45DH</span>      <span class="shop-item-priceL" style="color: white;size:30px">65DH</span><br>
+    <button class="shop-item-buttonS"onclick="cardCounter()">+S</button>&nbsp;&nbsp;&nbsp; <button class="shop-item-buttonM"onclick="cardCounter()">+M</button>
+   
+    &nbsp;&nbsp;&nbsp;  <button class="shop-item-buttonL"onclick="cardCounter()">+L</button>
+ </p>
+        </div>
+      </div>
+                    
 
     </section><!-- End Menu Section -->
 
@@ -455,7 +463,7 @@
   </div>
 
 <section class="container content-section" id="buying">
-  <h2 class="section-header">CART</h2>
+  <h2 class="section-header" style="color: white;">CART</h2>
   <div class="cart-row">
       <span class="cart-item cart-header cart-column">ITEM</span>
       <span class="cart-price cart-header cart-column">PRICE</span>
@@ -476,7 +484,7 @@
     <section id="loca" class="about">
       <div class="container-fluid">
   
-        <div class="row">
+        <div class="row" id="loca">
   
           <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/slide/t3.jpg");'>
             <a href="https://www.facebook.com/106241311161365/videos/165964185189077" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
@@ -571,14 +579,14 @@
   <footer id="footer">
     <div class="container">
      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+     
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+     
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>pano</span></strong>. All Rights Reserved
+        contact us 0708026351
       </div>
       <div class="credits">
 
